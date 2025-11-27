@@ -1,4 +1,20 @@
 {
   "manifest_version": 2,
-  "name": "Youtube AdBlocker",
+  "name": "YouTube AdBlocker",
   "description": "Blocking YT ads.",
+  "version": "0.0.1",
+  "author": "<AUTHOR_NAME>",
+  "browser_action": {
+    "default_title": "YouTube AdBlocker",
+  },
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "https://www.youtube.com/"
+  ],
+  "background": {
+    "scripts": [
+      "extension.js"
+    ]
+  }
+}
